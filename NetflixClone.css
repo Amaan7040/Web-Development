@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("C:/Users/khana/Downloads/Netflix/bg.jpg");
+    background-position: center center;
+    background-size: calc(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 650px;
+    position: relative;
+}
+
+.main .box {
+    background-color: black;
+    position: absolute;
+    height: 650px;
+    opacity: 0.69;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    max-width: 60vw;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 100px;
+}
+
+img {
+    height: 60px;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav btn {
+    position: relative;
+    z-index: 10;
+}
+
+.txt {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.txt>:nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.txt>:nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.txt>:nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+select {
+    background-color: #ffffff1a;
+    color: white;
+}
+
+select option {
+    color: black;
+    width: 70px;
+}
+
+button.btn.rbtn {
+    background-color: red;
+    color: white;
+    width: 70px;
+    cursor: pointer;
+}
+
+button.btn.rbtn:hover {
+    background-color: rgba(255, 0, 0, 0.532);
+}
+
+
+.buttons input {
+    background-color: rgba(255, 255, 255, 0.118);
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+}
+
+button.btn.redBut {
+    background-color: red;
+    font-size: 25px;
+}
+
+button.btn.redBut:hover {
+    background-color: rgba(255, 0, 0, 0.532);
+}
+
+.separation {
+    width: 100vw;
+    background-color: grey;
+    height: 5px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.secImg {
+    position: relative;
+
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+    height: auto;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    margin: 33px auto;
+    font-size: 24px;
+    padding: 24px;
+    background-color: #2d2d2d;
+    max-width: 60vw;
+    transition: all ease-in-out 1.5s;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.footer-item {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.questions {
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.footer-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.buttonn h2 {
+    text-align: center;
+    color: white;
+}
+
+.buttonn input {
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.118);
+    font-size: 15px;
+    margin-left: 400px;
+    margin-bottom: 15px;
+}
+
+.buttonn .redButt {
+    color: white;
+    background-color: red;
+    margin-right: 400px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonn .redButt:hover {
+    background-color: rgba(255, 0, 0, 0.445);
+    color: white;
+}
+
+@media screen and (max-width: 1220px) {
+    nav {
+        max-width: 83vw;
+        margin-right: 126px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        /* margin: auto; */
+        height: 93px;
+    }
+
+    .txt>:nth-child(1) {
+        font-family: 'Poppins', sans-serif;
+        font-size: 33px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .txt>:nth-child(2) {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .txt>:nth-child(3) {
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    .buttons input {
+        background-color: rgba(255, 255, 255, 0.118);
+        font-size: 14px;
+        font-weight: bolder;
+        color: black;
+    }
+
+    button.btn.redBut {
+        background-color: red;
+        font-size: 14px;
+    }
+
+    .first {
+        max-width: 69vw;
+    }
+
+    section.first>div :nth-child(1) {
+        font-size: 35px;
+    }
+
+    section.first>div :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .secImg img {
+        width: 363px;
+    }
+
+    .secImg video {
+        width: 363px;
+    }
+
+    .faq {
+        padding: 18px;
+    }
+
+    faq h2 {
+        font-size: 30px;
+    }
+
+    .faqbox {
+        display: flex;
+        justify-content: space-between;
+        margin: 29px auto;
+        font-size: 20px;
+        padding: 24px;
+        background-color: #2d2d2d;
+        max-width: 46vw;
+        transition: all ease-in-out 1.5s;
+    }
+
+    .buttonn h2 {
+        font-size: 20px;
+    }
+
+    .buttonn input {
+        margin-left: 300px;
+    }
+
+    .questions {
+        margin-left: 83px;
+    }
+
+    footer-item {
+        margin-left: 24px;
+        gap: 18px;
+        margin-right: 112px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 33px;
+
+    }
+
+    .buttonn h2 {
+        font-size: 15px;
+    }
+}
