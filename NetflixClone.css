@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,7 @@ body {
 .main {
     background-image: url("C:/Users/khana/Downloads/Netflix/bg.jpg");
     background-position: center center;
-    background-size: calc(1200px, 100vw);
+    background-size: cover; /* Changed from 'calc(1200px, 100vw)' to 'cover' for better responsiveness */
     background-repeat: no-repeat;
     height: 650px;
     position: relative;
@@ -70,20 +69,20 @@ nav .btn {
     cursor: pointer;
 }
 
-.txt>:nth-child(1) {
+.txt > :nth-child(1) {
     font-family: 'Poppins', sans-serif;
     font-size: 48px;
     font-weight: bolder;
     text-align: center;
 }
 
-.txt>:nth-child(2) {
+.txt > :nth-child(2) {
     font-weight: 400;
     font-size: 24px;
     text-align: center;
 }
 
-.txt>:nth-child(3) {
+.txt > :nth-child(3) {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -96,7 +95,6 @@ select {
 
 select option {
     color: black;
-    width: 70px;
 }
 
 button.btn.rbtn {
@@ -109,7 +107,6 @@ button.btn.rbtn {
 button.btn.rbtn:hover {
     background-color: rgba(255, 0, 0, 0.532);
 }
-
 
 .buttons input {
     background-color: rgba(255, 255, 255, 0.118);
@@ -143,39 +140,37 @@ button.btn.redBut:hover {
     align-items: center;
 }
 
-
-
 .secImg {
     position: relative;
-
 }
 
 .secImg img {
-    width: 555px;
+    width: 100%; /* Changed from specific width to percentage for better responsiveness */
+    max-width: 555px; /* Added max-width to prevent image overflow on smaller screens */
     position: relative;
     z-index: 10;
     height: auto;
 }
 
 .secImg video {
+    width: 100%; /* Changed from specific width to percentage for better responsiveness */
     position: absolute;
     top: 51px;
     right: 0;
-    width: 555px;
 }
 
-section.first>div {
+section.first > div {
     display: flex;
     flex-direction: column;
     padding: 34px 0;
 }
 
-section.first>div :nth-child(1) {
+section.first > div :nth-child(1) {
     font-size: 48px;
     font-weight: bolder;
 }
 
-section.first>div :nth-child(2) {
+section.first > div :nth-child(2) {
     font-size: 24px;
 }
 
@@ -249,15 +244,14 @@ section.first>div :nth-child(2) {
     font-weight: bolder;
     background-color: rgba(255, 255, 255, 0.118);
     font-size: 15px;
-    margin-left: 400px;
+    margin-left: auto; /* Changed from specific margin to auto for better responsiveness */
+    margin-right: auto; /* Changed from specific margin to auto for better responsiveness */
     margin-bottom: 15px;
 }
 
 .buttonn .redButt {
     color: white;
     background-color: red;
-    margin-right: 400px;
-    margin-bottom: 15px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -267,7 +261,7 @@ section.first>div :nth-child(2) {
     color: white;
 }
 
-.n span{
+.n span {
     margin: 10px;
     color: white;
     font-size: 15px;
@@ -281,32 +275,29 @@ section.first>div :nth-child(2) {
         display: flex;
         justify-content: center;
         justify-content: space-between;
-        /* margin: auto; */
         height: 93px;
     }
 
-    .txt>:nth-child(1) {
-        font-family: 'Poppins', sans-serif;
+    .txt > :nth-child(1) {
         font-size: 33px;
         font-weight: bolder;
         text-align: center;
         margin-right: 114px;
     }
 
-    .txt>:nth-child(2) {
+    .txt > :nth-child(2) {
         font-weight: 400;
         font-size: 18px;
         text-align: center;
         margin-right: 115px;
     }
 
-    .txt>:nth-child(3) {
+    .txt > :nth-child(3) {
         font-weight: 400;
         font-size: 16px;
         text-align: center;
         margin-right: 101px;
     }
-
 
     .buttons input {
         background-color: rgba(255, 255, 255, 0.118);
@@ -324,40 +315,33 @@ section.first>div :nth-child(2) {
         max-width: 69vw;
     }
 
-    section.first>div :nth-child(1) {
+    section.first > div :nth-child(1) {
         font-size: 35px;
         margin-right: 53px;
     }
 
-    section.first>div :nth-child(2) {
+    section.first > div :nth-child(2) {
         font-size: 18px;
     }
 
     .secImg img {
-        width: 363px;
+        max-width: 363px;
     }
 
     .secImg video {
-        width: 363px;
+        max-width: 363px;
     }
 
     .faq {
         padding: 18px;
     }
 
-    faq h2 {
+    .faq h2 {
         font-size: 30px;
     }
 
     .faqbox {
-        display: flex;
-        justify-content: space-between;
-        margin: 29px auto;
-        font-size: 20px;
-        padding: 24px;
-        background-color: #2d2d2d;
         max-width: 46vw;
-        transition: all ease-in-out 1.5s;
     }
 
     .buttonn h2 {
@@ -365,7 +349,8 @@ section.first>div :nth-child(2) {
     }
 
     .buttonn input {
-        margin-left: 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .questions {
@@ -381,7 +366,6 @@ section.first>div :nth-child(2) {
     .faq h2 {
         text-align: center;
         font-size: 33px;
-
     }
 
     .buttonn h2 {
