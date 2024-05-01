@@ -18,6 +18,15 @@ body {
     position: relative;
 }
 
+.main nav span img{
+    margin-left: 15px;
+}
+
+.si-btn{
+    margin-left: 153px;
+    display: flex;
+}
+
 .main .box {
     background-color: black;
     position: absolute;
