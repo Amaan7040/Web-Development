@@ -1,0 +1,30 @@
+.container {
+    font-size: 25px;
+    cursor: pointer;
+}
+p{
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button{
+    background-color: rgb(5, 114, 238);
+    color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 4px;
+    margin: 4px;
+    cursor: pointer;
+    height: 40px;
+}
+button:hover{
+    background-color: rgb(29, 147, 220);
+}
+input{
+    color: forestgreen;
+}
+.bill-details {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
