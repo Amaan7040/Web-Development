@@ -1,10 +1,14 @@
+body {
+    background-image: url('https://www.shutterstock.com/shutterstock/photos/2418413249/display_1500/stock-vector--pizza-burger-or-hamburger-online-sale-promotion-video-thumbnail-fast-food-website-background-2418413249.jpg'); 
+    font-family: Arial, sans-serif;
+}
 .container {
     font-size: 25px;
     cursor: pointer;
 }
 p{
     font-size: larger;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
 }
 button{
     background-color: rgb(5, 114, 238);
